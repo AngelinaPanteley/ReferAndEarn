@@ -1,0 +1,97 @@
+.header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 120px;
+  background-color: #3f3e44;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+
+  .header__search-box {
+    position: relative;
+    padding-left:26%;
+    padding-right: 21%;
+    height: 45px;
+    width: 74%;
+
+    .search-input {
+      position:absolute;
+      outline: none;
+      border: none;
+      height: 45px;
+      width: 35.7%;
+      background-color: #ffffff;
+      color: #7b7b7b;
+      font-size: 17px;
+      line-height: 65px;
+      padding-left: 24px;
+      padding-right: 24px;
+      border-radius: 10px 0px 0px 10px;
+    }
+
+    .search-btn {
+      right: 25.5%;
+      position:absolute;
+      width: 65px;
+      height: 45px;
+      border-radius: 0 10px 10px 0;
+      background-color: $green;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      transition: all .3s;
+
+    }
+
+    .search-icon {
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: 5px;
+      left: 15px;
+      background-position: 0px 0px;
+    }
+
+    .search-btn:hover {
+      text-shadow: 0 0 2px #ffffff;
+      box-shadow: 0 0 10px 3px $green;
+      transition: all .3s;
+    }
+  }
+
+  .header__icon-box {
+    width: 14%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-align-items:center;
+        -ms-flex-align:center;
+            align-items:center;
+
+    .login-icon {
+      width: 76px;
+      height: 76px;
+      background-position: -125px 0;
+    }
+
+    .menu-icon {
+      width: 67px;
+      height: 60px;
+      background-position: -220px 0;
+    }
+  }
+
+}
