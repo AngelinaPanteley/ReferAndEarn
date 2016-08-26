@@ -1,0 +1,28 @@
+.footer {
+	color: #ffffff;
+	font-size:25px;
+	font-family: 'Roboto-Thin',sans-serif;
+	line-height: 30px;
+	padding: 48px 100px 48px 25px;
+	background-color: rgba(0,0,0,0.7);
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-align-items: top;
+	    -ms-flex-align: top;
+	        align-items: top;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+
+	.footer__logo-block {
+    width: 30%;
+
+    .copyright {
+      font-size: 25px;
+    }
+	}
+}

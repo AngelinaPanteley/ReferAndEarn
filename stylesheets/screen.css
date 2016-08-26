@@ -13,7 +13,14 @@
 .wrapper {
   min-width: 1530px; }
 
+.central-row {
+  box-sizing: border-box; }
+
 /*fonts*/
+a {
+  cursor: pointer;
+  text-decoration: none; }
+
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.ttf);
@@ -40,7 +47,113 @@ body {
 
 .icon-from-sprite {
   display: inline-block;
-  background-image: url(../images/icon-sprite.png); }
+  background-image: url(../images/sprite.png); }
+
+h1 {
+  font-size: 50px;
+  font-family: 'Cardo',sans-serif;
+  line-height: 80px; }
+
+h3 {
+  font-size: 45px;
+  font-family: 'Cardo',sans-serif;
+  line-height: 80px; }
+
+.header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 120px;
+  background-color: #3f3e44;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .header .header__search-box {
+    position: relative;
+    padding-left: 26%;
+    padding-right: 21%;
+    height: 45px;
+    width: 500px;
+    box-sizing: content-box; }
+    .header .header__search-box .search-input {
+      position: absolute;
+      outline: none;
+      border: none;
+      height: 45px;
+      width: 420px;
+      background-color: #ffffff;
+      color: #7b7b7b;
+      font-size: 17px;
+      line-height: 65px;
+      padding-left: 24px;
+      padding-right: 24px;
+      border-radius: 5px; }
+    .header .header__search-box .search-btn {
+      right: 31%;
+      position: absolute;
+      width: 80px;
+      height: 45px;
+      border-radius: 5px;
+      background-color: #46ba8c;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      transition: all .3s; }
+    .header .header__search-box .search-icon {
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: 5px;
+      left: 23px;
+      background-position: 0px 0px; }
+    .header .header__search-box .search-btn:hover {
+      text-shadow: 0 0 2px #ffffff;
+      box-shadow: 0 0 25px 2px #46ba8c;
+      transition: all .3s; }
+  .header .header__icon-box {
+    width: 14%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .header .header__icon-box .login-icon {
+      width: 76px;
+      height: 76px;
+      background-position: -125px 0;
+      text-decoration: none;
+      color: #ffffff; }
+      .header .header__icon-box .login-icon .flaticon-user-3 {
+        font-size: 76px;
+        line-height: 76px; }
+    .header .header__icon-box .menu-icon {
+      width: 67px;
+      height: 60px;
+      background-position: -220px 0;
+      text-decoration: none;
+      color: #ffffff; }
+      .header .header__icon-box .menu-icon .flaticon-menu-2 {
+        font-size: 60px;
+        line-height: 60px; }
+    .header .header__icon-box a {
+      transition: all .3s; }
+    .header .header__icon-box a:hover {
+      color: #46ba8c;
+      text-shadow: 0px 0px 10px #46ba8c;
+      transition: all .3s; }
 
 .aside {
   width: 15%;
@@ -62,12 +175,34 @@ body {
         font-size: 30px;
         line-height: 52px;
         font-weight: 200;
-        text-decoration: none; }
+        text-decoration: none;
+        transition: all .3s; }
         .aside .menu li a .menu__icon {
-          width: 30px;
           margin-right: 19px;
           vertical-align: middle;
-          margin-bottom: 5px; }
+          margin-bottom: 5px;
+          transition: all .3s; }
+        .aside .menu li a .menu__arrow {
+          width: 36px;
+          height: 36px;
+          background-position: -167px 0px;
+          float: right;
+          opacity: 0;
+          margin-top: 8px;
+          transition: all .3s; }
+        .aside .menu li a .mobile-icon {
+          width: 30px;
+          height: 24px;
+          background-position: 0px -80px; }
+    .aside .menu li:hover a {
+      color: #0bcea2;
+      transition: all .3s; }
+    .aside .menu li:hover .menu__icon {
+      background-position: 0px -117px;
+      transition: all .3s; }
+    .aside .menu li:hover .menu__arrow {
+      opacity: 1;
+      transition: all .3s; }
 
 .main-block {
   max-width: 85%;
@@ -86,6 +221,7 @@ body {
   -ms-flex-pack: distribute;
   justify-content: space-around; }
   .main-block .main-block__product-box {
+    position: relative;
     margin-bottom: 45px;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -138,9 +274,36 @@ body {
           font-weight: 400; }
       .main-block .main-block__product-box .main-block__product-box__price .you-get-box {
         border-right: 1px solid #3f3e44; }
-
-.central-row {
-  box-sizing: border-box; }
+  .main-block .main-block__product-box .main-block__product-box__hover {
+    opacity: 0;
+    width: 100%;
+    height: 228px;
+    background-color: rgba(70, 186, 140, 0.9);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 60px;
+    color: #ffffff;
+    transition: all .3s;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .main-block .main-block__product-box .main-block__product-box__hover .clock-icon {
+      width: 55px;
+      height: 55px;
+      background-position: -69px 0px; }
+  .main-block .main-block__product-box:hover .main-block__product-box__hover {
+    opacity: 1;
+    transition: all .3s; }
 
 .footer {
   color: #ffffff;
@@ -165,94 +328,5 @@ body {
     width: 30%; }
     .footer .footer__logo-block .copyright {
       font-size: 25px; }
-
-h1 {
-  font-size: 50px;
-  font-family: 'Cardo',sans-serif;
-  line-height: 80px; }
-
-h3 {
-  font-size: 45px;
-  font-family: 'Cardo',sans-serif;
-  line-height: 80px; }
-
-.header {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  height: 120px;
-  background-color: #3f3e44;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
-  .header .header__search-box {
-    position: relative;
-    padding-left: 26%;
-    padding-right: 21%;
-    height: 45px;
-    width: 74%; }
-    .header .header__search-box .search-input {
-      position: absolute;
-      outline: none;
-      border: none;
-      height: 45px;
-      width: 35.7%;
-      background-color: #ffffff;
-      color: #7b7b7b;
-      font-size: 17px;
-      line-height: 65px;
-      padding-left: 24px;
-      padding-right: 24px;
-      border-radius: 10px 0px 0px 10px; }
-    .header .header__search-box .search-btn {
-      right: 25.5%;
-      position: absolute;
-      width: 65px;
-      height: 45px;
-      border-radius: 0 10px 10px 0;
-      background-color: #46ba8c;
-      outline: none;
-      border: none;
-      cursor: pointer;
-      transition: all .3s; }
-    .header .header__search-box .search-icon {
-      width: 35px;
-      height: 35px;
-      position: absolute;
-      top: 5px;
-      left: 15px;
-      background-position: 0px 0px; }
-    .header .header__search-box .search-btn:hover {
-      text-shadow: 0 0 2px #ffffff;
-      box-shadow: 0 0 10px 3px #46ba8c;
-      transition: all .3s; }
-  .header .header__icon-box {
-    width: 14%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .header .header__icon-box .login-icon {
-      width: 76px;
-      height: 76px;
-      background-position: -125px 0; }
-    .header .header__icon-box .menu-icon {
-      width: 67px;
-      height: 60px;
-      background-position: -220px 0; }
 
 /*# sourceMappingURL=screen.css.map */
