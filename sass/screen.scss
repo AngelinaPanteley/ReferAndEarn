@@ -32,6 +32,13 @@ $green: #46ba8c;
 }
 
 @font-face {
+  font-family: "Roboto-Thin";
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
   font-family: "Cardo";
   src: url(../fonts/Cardo-Regular.ttf);
   font-style: normal;
@@ -55,14 +62,13 @@ body {
 
 .aside{
   width: 15%;
-  height: 100%;
+  box-sizing: border-box;
   float: left;
   background-color: #f5f5f5;
   padding: 70px 0;
 
   .menu {
   	list-style-type: none;
-
 
   	li {
   		height: 53px;
@@ -176,8 +182,50 @@ body {
 }
 
 .central-row {
-  position: relative;
+  box-sizing:border-box;
 }
 
+
+.footer {
+	color: #ffffff;
+	font-size:25px;
+	font-family: 'Roboto-Thin',sans-serif;
+	line-height: 30px;
+	padding: 48px 100px 48px 25px;
+	background-color: rgba(0,0,0,0.7);
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-align-items: top;
+	    -ms-flex-align: top;
+	        align-items: top;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+
+	.footer__logo-block {
+    width: 30%;
+
+    .copyright {
+      font-size: 25px;
+    }
+	}
+}
+
+
+h1 {
+	font-size: 50px;
+	font-family: 'Cardo',sans-serif;
+	line-height:80px;
+}
+
+h3 {
+	font-size: 45px;
+	font-family: 'Cardo',sans-serif;
+	line-height:80px;
+}
 
 @import "header";
