@@ -14,36 +14,294 @@
     <header class="header">
     	<a href=""><img src="images/white-logo.png"></a>
     	<div class="header__search-box">
-    		<input type="text" name="search" class="search-input" placeholder="Search..." />
+    		<input type="text" name="search" class="search-input" placeholder="Search..."/>
       	<button class="search-btn"><i class="search-icon icon-from-sprite"></i></button>
     	</div>
     	<div class="header__icon-box">
-        <a href="" class="login-icon"><i class="flaticon-user-3"></i></a>
+        <div class="login-box log-out"> <!--2 different hovers: classes "log-in" and "log-out"-->
+          <a href="" class="login-icon"><i class="flaticon-user-3"></i></a>
+          <div class="login-box__white-triangle"></div>
+          <div class="login-box__gray-triangle"></div>
+          <div class="sign-in-hover">
+            <h3>Sign in</h3>
+            <div class="sign-in-input-box">
+              <p>Enter your email address</p>
+              <input type="email" class="sign-in__input" />
+              <p>Enter your password</p>
+              <input type="password" class="sign-in__input" />
+            </div>
+            <a href="#">Forgot your password?</a>
+            <input type="submit" class="sign-in-btn" value="Sign in"/>
+            <p>Sign in with:
+              <a href=""><i class="icon-facebook sign-in__icon"></i></a>
+              <a href=""><i class="icon-gplus sign-in__icon"></i></a>
+              <a href=""><i class="icon-linkedin sign-in__icon"></i></a>
+              <a href=""><i class="icon-instagram sign-in__icon"></i></a>
+            </p>
+          </div>
+          <div class="register-hover">
+            <span>Don't have an account?</span>
+            <a href="" class="register-btn">Register</a>
+          </div>
+          <div class="account-hover">
+            <img src="trash/photo.png" class="account-hover__photo" />
+            <div class="account-hover__flex-container">
+              <h3>Adam Smith</h3>
+              <a href="" class="account-btn">My account</a>
+            </div>
+          </div>
+          <div class="log-out-hover">
+            <a href="" class="log-out-btn">Log out</a>
+          </div>
+        </div>
         <a href="" class="menu-icon"><i class="flaticon-menu-2"></i></a>
     	</div>
     </header>
     <div class="central-row row">
      <aside class="aside">
     	<ul class="menu">
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
-        <li><a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a></li>
+        <li>
+          <a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a>
+          <div class="submenu">
+          	<h2>Mobiles</h2>
+          	<ul>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a>
+          <div class="submenu">
+          	<h2>Mobiles</h2>
+          	<ul>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a>
+          <div class="submenu">
+          	<h2>Mobiles</h2>
+          	<ul>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a>
+          <div class="submenu">
+          	<h2>Mobiles</h2>
+          	<ul>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a>
+          <div class="submenu">
+          	<h2>Mobiles</h2>
+          	<ul>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a>
+          <div class="submenu">
+          	<h2>Mobiles</h2>
+          	<ul>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a>
+          <div class="submenu">
+          	<h2>Mobiles</h2>
+          	<ul>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a>
+          <div class="submenu">
+          	<h2>Mobiles</h2>
+          	<ul>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a>
+          <div class="submenu">
+          	<h2>Mobiles</h2>
+          	<ul>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a>
+          <div class="submenu">
+          	<h2>Mobiles</h2>
+          	<ul>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href=""><i class="menu__icon icon-from-sprite mobile-icon"></i>Mobiles<i class="menu__arrow icon-from-sprite"></i></a>
+          <div class="submenu">
+          	<h2>Mobiles</h2>
+          	<ul>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+          	  <li>Option</li>
+            </ul>
+          </div>
+        </li>
 
       </ul>
      </aside>

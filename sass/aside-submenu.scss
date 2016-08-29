@@ -1,0 +1,38 @@
+.aside {
+	.menu {
+		li {
+			.submenu {
+				height: 120%;
+				min-width: 360px;
+        opacity: 0;
+				z-index: 20;
+				position: absolute;
+				top: -70px;
+				left: 104%;
+				padding: 30px 28px 110px 28px;
+				background-color: #f5f5f5;
+				transition: all .3s;
+
+				li {
+          cursor: pointer;
+          font-size: 27px;
+          color: #373737;
+          border:none;
+          padding: none;
+          line-height: 30px;
+          height: 30px;
+
+				}
+
+				li:hover {
+					color: #0bcea2;
+				}
+			}
+		}
+		li:hover .submenu{
+			opacity: 1;
+			transition: all .3s;
+
+		}
+	}
+}

@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@import "reset.css";
+
+/*base*/
+
+$green: #46ba8c;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.row:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.wrapper {
+	min-width: 1530px;
+}
+
+.central-row {
+  box-sizing:border-box;
+}
+
+/*fonts*/
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Cardo";
+  src: url(../fonts/Cardo-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+  background-color: #000000;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #373737;
+	font-size: 30px;
+	line-height: 52px;
+	font-weight: 200;
+	background-color: #ffffff;
+}
+
+.icon-from-sprite {
+	display: inline-block;
+	background-image: url(../images/sprite.png);
+}
+
+h1 {
+	font-size: 50px;
+	font-family: 'Cardo',sans-serif;
+	line-height:80px;
+}
+
+h2 {
+	text-align: center;
+  font-family: 'Cardo',sans-serif;
+  font-size: 60px;
+  line-height: 100px;
+  color:#3f3e44;
+}
+
+h3 {
+	font-size: 45px;
+	font-family: 'Cardo',sans-serif;
+	line-height:80px;
+}
+
+
+
+@import "header";
+@import "aside-menu";
+@import "aside-submenu";
+@import "main-block";
+@import "footer";
