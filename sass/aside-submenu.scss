@@ -2,6 +2,7 @@
 	.menu {
 		li {
 			.submenu {
+				display: none;
 				height: 120%;
 				min-width: 360px;
         opacity: 0;
@@ -30,6 +31,7 @@
 			}
 		}
 		li:hover .submenu{
+			display: block;
 			opacity: 1;
 			transition: all .3s;
 

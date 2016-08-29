@@ -1,0 +1,69 @@
+.header {
+  .login-box {
+    .account-dropdown {
+      transition: all .3s;
+      opacity: 0;
+      padding: 35px 32px;
+      width:480px;
+      background-color: #3f3e44;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      top: 101px;
+      z-index:20;
+
+      .account-dropdown__photo {
+        float: left;
+        width: 106px;
+        height: 106px;
+        border-radius: 50%;
+        border: 3px solid #ffffff;
+        margin-right: 23px;
+      }
+
+      h3 {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 55px;
+      }
+
+      .account-btn {
+        width: 233px;
+        height: 33px;
+        display: block;
+        margin: 20px auto;
+        background-color: #46ba8c;
+        outline: none;
+        border: none;
+        font-size: 25px;
+        color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 2px 2px #30966e;
+        cursor: pointer;
+        transition: all .3s;
+        text-align: center;
+        line-height: 33px;
+      }
+
+      .account-btn:hover {
+        transition: all .3s;
+        box-shadow: none;
+        margin:21px auto 19px auto;
+        background-color: #30966e;
+        color: #ffffff;
+      }
+
+      .account-dropdown__flex-container {
+        float: left;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+      }
+    }
+  }
+}

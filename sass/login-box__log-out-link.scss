@@ -1,0 +1,25 @@
+.header {
+  .login-box {
+    .log-out-dropdown {
+      transition: all .3s;
+      opacity: 0;
+      padding: 0px 32px;
+      width:480px;
+      background-color: #3f3e44;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      top: 302px;
+      z-index:20;
+      text-align: center;
+
+      a {
+        line-height: 66px;
+        font-size: 30px;
+        color: #ffffff;
+      }
+    }
+  }
+}

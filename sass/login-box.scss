@@ -1,0 +1,68 @@
+.header {
+  .login-box {
+    position:relative;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight:100;
+
+    .login-box__gray-triangle {
+      transition: all .3s;
+      opacity: 0;
+      width: 37px;
+      height: 0px;
+      border-bottom: 19px solid #3f3e44;
+      border-left: 19px solid transparent;
+      border-right: 19px solid transparent;
+      border-top: 0px solid transparent;
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+    }
+
+    .login-box__white-triangle {
+      transition: all .3s;
+      opacity: 0;
+      width: 39px;
+      height: 0px;
+      border-bottom: 20px solid #ffffff;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 0px solid transparent;
+      position: absolute;
+      bottom: -22px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+    }
+
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .log-in:hover {
+    .login-box__gray-triangle,
+    .login-box__white-triangle,
+    .sign-in-dropdown,
+    .register-dropdown {
+      opacity: 1;
+      transition: all .5s;
+    }
+  }
+
+  .log-out:hover {
+    .login-box__gray-triangle,
+    .login-box__white-triangle,
+    .account-dropdown,
+    .log-out-dropdown {
+      opacity: 1;
+      transition: all .5s;
+    }
+  }
+}
+

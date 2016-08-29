@@ -1,0 +1,33 @@
+.header {
+  .login-box {
+    .register-dropdown {
+      transition: all .3s;
+      opacity: 0;
+      padding: 35px 32px;
+      width:387px;
+      background-color: #3f3e44;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      top: 573px;
+      z-index:20;
+
+      .register-btn {
+        color: #ffffff;
+        display: inline-block;
+        cursor: pointer;
+        width: 103px;
+        height: 31px;
+        border-radius: 5px;
+        border: 3px solid #46ba8c;
+        margin-left: 5px;
+        line-height: 25px;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+  }
+}
