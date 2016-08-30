@@ -5,8 +5,11 @@
     font-size: 20px;
     line-height: 40px;
     font-weight:100;
+    height: 100%;
+    padding-top: 22px;
 
     .login-box__gray-triangle {
+      display: none;
       transition: all .3s;
       opacity: 0;
       width: 37px;
@@ -16,7 +19,7 @@
       border-right: 19px solid transparent;
       border-top: 0px solid transparent;
       position: absolute;
-      bottom: -25px;
+      bottom: -3px;
       left: 50%;
       -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -24,6 +27,7 @@
     }
 
     .login-box__white-triangle {
+      display: none;
       transition: all .3s;
       opacity: 0;
       width: 39px;
@@ -33,7 +37,7 @@
       border-right: 20px solid transparent;
       border-top: 0px solid transparent;
       position: absolute;
-      bottom: -22px;
+      bottom: 0px;
       left: 50%;
       -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -48,8 +52,11 @@
   .log-in:hover {
     .login-box__gray-triangle,
     .login-box__white-triangle,
+    .sign-in-dropdown-container,
     .sign-in-dropdown,
+    .register-dropdown-container,
     .register-dropdown {
+      display: block;
       opacity: 1;
       transition: all .5s;
     }
@@ -58,8 +65,11 @@
   .log-out:hover {
     .login-box__gray-triangle,
     .login-box__white-triangle,
+    .account-dropdown-container,
     .account-dropdown,
+    .log-out-dropdown-container,
     .log-out-dropdown {
+      display: block;
       opacity: 1;
       transition: all .5s;
     }

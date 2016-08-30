@@ -1,18 +1,26 @@
 .header {
   .login-box {
+    .sign-in-dropdown-container {
+      display: none;
+      padding-top:3px;
+      z-index:20;
+      width:387px;
+      top: 120px;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
+
     .sign-in-dropdown {
+      display: none;
       transition: all .3s;
       opacity: 0;
       padding: 35px 32px;
       width:387px;
       background-color: #3f3e44;
       position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-              transform: translateX(-50%);
-      top: 101px;
-      z-index:20;
 
       .sign-in__input {
         width:322px;

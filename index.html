@@ -18,11 +18,12 @@
       	<button class="search-btn"><i class="search-icon icon-from-sprite"></i></button>
     	</div>
     	<div class="header__icon-box">
-        <div class="login-box log-in"> <!--2 different hovers: classes "log-in" and "log-out"-->
+        <div class="login-box log-out"> <!--2 different hovers: classes "log-in" and "log-out"-->
           <a href="" class="login-icon"><i class="flaticon-user-3"></i></a>
           <div class="login-box__white-triangle"></div>
           <div class="login-box__gray-triangle"></div>
-          <div class="sign-in-dropdown">
+          <div class="sign-in-dropdown-container">
+           <div class="sign-in-dropdown">
             <h3>Sign in</h3>
             <div class="sign-in-input-box">
               <p>Enter your email address</p>
@@ -38,20 +39,27 @@
               <a href=""><i class="icon-linkedin sign-in__icon"></i></a>
               <a href=""><i class="icon-instagram sign-in__icon"></i></a>
             </p>
+           </div>
           </div>
-          <div class="register-dropdown">
+          <div class="register-dropdown-container">
+           <div class="register-dropdown">
             <span>Don't have an account?</span>
             <a href="" class="register-btn">Register</a>
+           </div>
           </div>
-          <div class="account-dropdown">
+          <div class="account-dropdown-container">
+           <div class="account-dropdown">
             <img src="trash/photo.png" class="account-dropdown__photo" />
             <div class="account-dropdown__flex-container">
               <h3>Adam Smith</h3>
               <a href="" class="account-btn">My account</a>
             </div>
+           </div>
           </div>
-          <div class="log-out-dropdown">
+          <div class="log-out-dropdown-container">
+           <div class="log-out-dropdown">
             <a href="" class="log-out-btn">Log out</a>
+           </div>
           </div>
         </div>
         <a href="" class="menu-icon"><i class="flaticon-menu-2"></i></a>

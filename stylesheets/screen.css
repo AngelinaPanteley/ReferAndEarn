@@ -389,8 +389,11 @@ body {
   color: #ffffff;
   font-size: 20px;
   line-height: 40px;
-  font-weight: 100; }
+  font-weight: 100;
+  height: 100%;
+  padding-top: 22px; }
   .header .login-box .login-box__gray-triangle {
+    display: none;
     transition: all .3s;
     opacity: 0;
     width: 37px;
@@ -400,12 +403,13 @@ body {
     border-right: 19px solid transparent;
     border-top: 0px solid transparent;
     position: absolute;
-    bottom: -25px;
+    bottom: -3px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
   .header .login-box .login-box__white-triangle {
+    display: none;
     transition: all .3s;
     opacity: 0;
     width: 39px;
@@ -415,7 +419,7 @@ body {
     border-right: 20px solid transparent;
     border-top: 0px solid transparent;
     position: absolute;
-    bottom: -22px;
+    bottom: 0px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -424,30 +428,42 @@ body {
     text-align: center; }
 .header .log-in:hover .login-box__gray-triangle,
 .header .log-in:hover .login-box__white-triangle,
+.header .log-in:hover .sign-in-dropdown-container,
 .header .log-in:hover .sign-in-dropdown,
+.header .log-in:hover .register-dropdown-container,
 .header .log-in:hover .register-dropdown {
+  display: block;
   opacity: 1;
   transition: all .5s; }
 .header .log-out:hover .login-box__gray-triangle,
 .header .log-out:hover .login-box__white-triangle,
+.header .log-out:hover .account-dropdown-container,
 .header .log-out:hover .account-dropdown,
+.header .log-out:hover .log-out-dropdown-container,
 .header .log-out:hover .log-out-dropdown {
+  display: block;
   opacity: 1;
   transition: all .5s; }
 
+.header .login-box .account-dropdown-container {
+  display: none;
+  padding-top: 3px;
+  z-index: 20;
+  width: 480px;
+  top: 120px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
 .header .login-box .account-dropdown {
+  display: none;
   transition: all .3s;
   opacity: 0;
   padding: 35px 32px;
   width: 480px;
   background-color: #3f3e44;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: 101px;
-  z-index: 20; }
+  position: absolute; }
   .header .login-box .account-dropdown .account-dropdown__photo {
     float: left;
     width: 106px;
@@ -490,38 +506,50 @@ body {
     -ms-flex-direction: column;
     flex-direction: column; }
 
+.header .login-box .log-out-dropdown-container {
+  display: none;
+  padding-top: 3px;
+  z-index: 20;
+  width: 480px;
+  top: 320px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
 .header .login-box .log-out-dropdown {
+  display: none;
   transition: all .3s;
   opacity: 0;
   padding: 0px 32px;
   width: 480px;
   background-color: #3f3e44;
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: 302px;
-  z-index: 20;
   text-align: center; }
   .header .login-box .log-out-dropdown a {
     line-height: 66px;
     font-size: 30px;
     color: #ffffff; }
 
+.header .login-box .register-dropdown-container {
+  display: none;
+  padding-top: 3px;
+  z-index: 20;
+  width: 387px;
+  top: 591px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
 .header .login-box .register-dropdown {
+  display: none;
   transition: all .3s;
   opacity: 0;
   padding: 35px 32px;
   width: 387px;
   background-color: #3f3e44;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: 573px;
-  z-index: 20; }
+  position: absolute; }
   .header .login-box .register-dropdown .register-btn {
     color: #ffffff;
     display: inline-block;
@@ -536,19 +564,25 @@ body {
     font-weight: 400;
     text-align: center; }
 
+.header .login-box .sign-in-dropdown-container {
+  display: none;
+  padding-top: 3px;
+  z-index: 20;
+  width: 387px;
+  top: 120px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
 .header .login-box .sign-in-dropdown {
+  display: none;
   transition: all .3s;
   opacity: 0;
   padding: 35px 32px;
   width: 387px;
   background-color: #3f3e44;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: 101px;
-  z-index: 20; }
+  position: absolute; }
   .header .login-box .sign-in-dropdown .sign-in__input {
     width: 322px;
     height: 35px;
