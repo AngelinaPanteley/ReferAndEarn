@@ -25,6 +25,7 @@ $green: #46ba8c;
 
 .central-row {
   position: relative;
+  padding-right:120px;
 }
 
 /*fonts*/
@@ -49,6 +50,13 @@ h3 {
 	line-height:80px;
 }
 
+h4 {
+	font-family: 'Cardo', sans-serif;
+	font-size: 100px;
+  line-height: 293px;
+  text-align: center;
+}
+
 a {
 	cursor: pointer;
 	text-decoration: none;
@@ -63,7 +71,7 @@ a {
 
 @font-face {
   font-family: "Roboto-Thin";
-  src: url(../fonts/Roboto-Thin.ttf);
+  src: url(../fonts/Roboto-Light.ttf);
   font-style: normal;
   font-weight: normal;
 }
@@ -91,6 +99,41 @@ body {
 }
 
 
+/*fixing footer*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.footer {
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+
 @import "header";
 @import "aside-menu";
 @import "footer";
@@ -101,4 +144,5 @@ body {
 @import "login-box__log-out-link";
 @import "login-box__register-link";
 @import "login-box__sign-in-dropdown";
+@import "registration-page";
 
