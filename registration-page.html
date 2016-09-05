@@ -16,7 +16,7 @@
      </header>
      <div class="main-block">
        <h4>Registration</h4>
-       <div class="registration-box step-1"><!--choose "step-1" or "step-2"-->
+       <div class="registration-box step-2"><!--choose "step-1" or "step-2"-->
          <div class="flex-block-row">
            <span class="step-box-1">Step 1</span>
            <span class="step-box-2">Step 2</span>
@@ -63,7 +63,21 @@
             </div>
             <div class="button-container">
               <div class="center-container row">
-                <input type="submit" name="next-btn" value="Next step >>" class="next-btn" />
+                <input type="submit" name="push-btn" value="Next step >>" class="push-btn" />
+              </div>
+            </div>
+         </form>
+         <form class="confirm-form">
+           <div class="confim-box">
+             <div class="center-container">
+               <h5>Confirm</h5>
+               <input type="text" name="code" placeholder="XX-XXX-XXXX" />
+               <span>Enter the code you received in SMS to verify your account</span>
+             </div>
+           </div>
+           <div class="button-container">
+              <div class="center-container row">
+                <input type="submit" name="confirm" value="Sign in" class="push-btn" />
               </div>
             </div>
          </form>

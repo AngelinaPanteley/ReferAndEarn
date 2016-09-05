@@ -1,0 +1,88 @@
+.registration-page,
+.sign-in-page {
+
+  .main-block {
+
+    .registration-box {
+
+      .registration-form {
+        width: 1010px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+        .account-type {
+          padding: 10px 123px 97px 121px;
+          background-color:#3f3e44;
+          border-top: 6px solid $green;
+          margin-bottom: 3px;
+
+          .registration-form__label-radio {
+            position: relative;
+            width: 350px;
+            height: 90px;
+
+            .registration-form__radio {
+               opacity: 0;
+            }
+
+            .registration-form__radio+.registration-form__radio-span:hover {
+              background-color: #4fdba3;
+              transition: all .3s;
+            }
+
+            .registration-form__radio+.registration-form__radio-span {
+              transition: all .3s;
+              position:absolute;
+              left: 0px;
+              top: 35px;
+              display: block;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              background-color: #ffffff;
+              color: #3f3e44;
+              line-height: 90px;
+              font-size: 45px;
+              border-radius: 10px;
+              font-weight: 100;
+              box-shadow: inset -9px -9px 0px 0px #30966e;
+              transition: all .2s;
+              cursor: pointer;
+
+            }
+
+            .registration-form__radio:checked+.registration-form__radio-span {
+              color: #ffffff;
+              background-color: $green;
+              transition: all .2s;
+            }
+          }
+        }
+
+        .profile-creation-block {
+          background-color:#3f3e44;
+
+          .flex-block-row input {
+            width: 350px;
+          }
+
+          .social-icons {
+             font-size: 45px;
+             font-weight: 100;
+             margin-bottom: 70px;
+             margin-top: 60px;
+
+            .sign-in__icon {
+              font-size: 60px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

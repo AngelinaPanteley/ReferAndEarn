@@ -49,13 +49,6 @@ h4 {
   line-height: 293px;
   text-align: center; }
 
-h5 {
-  font-family: 'Cardo', sans-serif;
-  font-size: 70px;
-  line-height: 90px;
-  text-align: center;
-  color: #ffffff; }
-
 h6 {
   font-family: 'Cardo', sans-serif;
   font-size: 80px;
@@ -1084,7 +1077,7 @@ body {
       font-size: 60px;
       line-height: 180px; }
 
-.product-page .fade {
+.fade {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8);
@@ -1092,139 +1085,5 @@ body {
   left: 0px;
   top: 0px;
   position: fixed; }
-.product-page .tabs-popup {
-  display: none;
-  top: 115px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 1010px;
-  z-index: 15;
-  position: fixed;
-  color: #ffffff;
-  font-size: 35px;
-  font-family: 'Roboto-Thin',sans-serif; }
-  .product-page .tabs-popup .tab-container input {
-    width: 100%;
-    height: 90px;
-    border-radius: 10px;
-    outline: none;
-    border: 3px solid #ffffff;
-    font-size: 35px;
-    line-height: 90px;
-    color: #5a5a62;
-    padding: 0 10px;
-    margin-bottom: 30px;
-    font-family: 'Roboto-Thin',sans-serif; }
-  .product-page .tabs-popup .tab-container input:focus {
-    border: 3px solid #46ba8c; }
-  .product-page .tabs-popup .tab-container input[type=submit] {
-    border: none; }
-  .product-page .tabs-popup .tab-container div {
-    padding: 50px 110px 255px 110px;
-    background-color: #3f3e44;
-    border-top: 6px solid #46ba8c; }
-    .product-page .tabs-popup .tab-container div p {
-      margin-top: 40px; }
-    .product-page .tabs-popup .tab-container div .push-btn {
-      width: 350px;
-      height: 90px;
-      float: right;
-      border: none;
-      border-radius: 9px;
-      font-size: 45px;
-      font-weight: 100;
-      font-family: 'Roboto-Thin',sans-serif;
-      color: #ffffff;
-      background-color: #46ba8c;
-      box-shadow: inset -9px -9px 0px 0px #30966e;
-      cursor: pointer;
-      transition: all .3s;
-      margin: 70px 0 0 0;
-      outline: none; }
-    .product-page .tabs-popup .tab-container div .push-btn:active {
-      box-shadow: none;
-      margin: 79px 0 0 9px;
-      height: 81px;
-      width: 341px; }
-  .product-page .tabs-popup .tab-container .button-container {
-    padding: 0;
-    border-top: none;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-    .product-page .tabs-popup .tab-container .button-container .push-btn {
-      float: none; }
-  .product-page .tabs-popup .tab-container #tab3 {
-    padding-bottom: 100px; }
-  .product-page .tabs-popup .tab-container .etabs {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    .product-page .tabs-popup .tab-container .etabs .tab {
-      -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-      background-color: #5a5a62;
-      text-align: center;
-      display: inline-block;
-      border-radius: 9px 9px 0px 0px;
-      border: 6px solid #46ba8c;
-      border-bottom: 0px;
-      font-size: 40px;
-      font-family: 'Roboto-Thin',sans-serif;
-      padding: 0px 17px;
-      cursor: pointer; }
-      .product-page .tabs-popup .tab-container .etabs .tab a:focus {
-        outline: none;
-        border: none; }
-    .product-page .tabs-popup .tab-container .etabs .tab:focus {
-      outline: none; }
-    .product-page .tabs-popup .tab-container .etabs .active-tab {
-      background-color: #3f3e44; }
-  .product-page .tabs-popup .tab-container .select {
-    background: url(../images/search-select-arrow.png) no-repeat #ffffff;
-    background-position: 100% 50%;
-    border-radius: 9px;
-    width: 100%;
-    padding: 0;
-    height: 90px;
-    border-top: none; }
-  .product-page .tabs-popup .tab-container .select > select:active,
-  .product-page .tabs-popup .tab-container .select > select:focus {
-    border: none;
-    outline: none; }
-  .product-page .tabs-popup .tab-container select > option {
-    background-color: transparent;
-    border: 0;
-    cursor: pointer; }
-  .product-page .tabs-popup .tab-container select > option:hover,
-  .product-page .tabs-popup .tab-container select > option:focus {
-    background-color: #46ba8c; }
-  .product-page .tabs-popup .tab-container .select > select {
-    line-height: 90px;
-    color: #5a5a62;
-    padding: 0 50px 0 10px;
-    font-family: 'Roboto-Thin',sans-serif;
-    width: 100%;
-    font-size: 35px;
-    background: transparent;
-    border: 0;
-    overflow: hidden;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    height: 90px;
-    outline: none;
-    cursor: pointer;
-    max-height: 230px; }
-.product-page .active-popup {
-  display: block; }
 
-/*# sourceMappingURL=screen.css.map */
+/*# sourceMappingURL=screencss.map */

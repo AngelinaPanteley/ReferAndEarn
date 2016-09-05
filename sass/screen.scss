@@ -2,6 +2,8 @@
 
 @import "reset.css";
 @import "fontello.css";
+@import "flaticon.css";
+@import "flexslider.css";
 
 /*base*/
 
@@ -19,8 +21,16 @@ $green: #46ba8c;
   clear: both;
 }
 
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
 .wrapper {
-	min-width: 1100px;
+  min-width: 1100px;
 }
 
 .central-row {
@@ -28,12 +38,14 @@ $green: #46ba8c;
   padding-right:120px;
 }
 
+
+
 /*fonts*/
 
 h1 {
-	font-size: 50px;
-	font-family: 'Cardo',sans-serif;
-	line-height:80px;
+  font-size: 50px;
+  font-family: 'Cardo',sans-serif;
+  line-height:80px;
 }
 
 h2 {
@@ -45,21 +57,37 @@ h2 {
 
 
 h3 {
-	font-size: 45px;
-	font-family: 'Cardo',sans-serif;
-	line-height:80px;
+  font-size: 45px;
+  font-family: 'Cardo',sans-serif;
+  line-height:80px;
 }
 
 h4 {
-	font-family: 'Cardo', sans-serif;
-	font-size: 100px;
+  font-family: 'Cardo', sans-serif;
+  font-size: 100px;
   line-height: 293px;
   text-align: center;
 }
 
+h5 {
+  font-family: 'Cardo', sans-serif;
+  font-size: 70px;
+  line-height: 90px;
+  text-align: center;
+  color: #ffffff;
+}
+
+h6 {
+  font-family: 'Cardo', sans-serif;
+  font-size: 80px;
+  color: #3f3e44;
+  line-height: 90px;
+}
+
 a {
-	cursor: pointer;
-	text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 @font-face {
@@ -85,18 +113,33 @@ a {
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	color: #373737;
-	font-size: 30px;
-	line-height: 52px;
-	font-weight: 200;
-	background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  color: #373737;
+  font-size: 30px;
+  line-height: 52px;
+  font-weight: 200;
+  background-color: #ffffff;
 }
 
 .icon-from-sprite {
-	display: inline-block;
-	background-image: url(../images/sprite.png);
+  display: inline-block;
+  background-image: url(../images/sprite.png);
 }
+
+.sign-in__icon {
+  color: #ffffff;
+  font-size:25px;
+  margin-left: 7px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.sign-in__icon:hover {
+  color: $green;
+  text-shadow: 0 0 5px 5px $green;
+  transition: all .3s;
+}
+
 
 
 /*fixing footer*/
@@ -144,5 +187,12 @@ body {
 @import "login-box__log-out-link";
 @import "login-box__register-link";
 @import "login-box__sign-in-dropdown";
+@import "registration-page__base";
+@import "registration-page__registration-form";
 @import "registration-page";
+@import "sign-in-page";
+@import "product-page.scss";
+@import "tabs-popup";
+
+
 

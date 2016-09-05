@@ -1,0 +1,197 @@
+.product-page {
+
+  .fade {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.8);
+    z-index: 10;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+  }
+
+  .tabs-popup {
+  	display: none;
+    top: 115px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+    width:1010px;
+    z-index: 15;
+    position: fixed;
+    color: #ffffff;
+    font-size: 35px;
+    font-family: 'Roboto-Thin',sans-serif;
+
+    .tab-container {
+
+    	input {
+        width: 100%;
+        height: 90px;
+        border-radius:10px;
+        outline: none;
+        border: 3px solid #ffffff;
+        font-size: 35px;
+        line-height: 90px;
+        color: #5a5a62;
+        padding: 0 10px;
+        margin-bottom: 30px;
+        font-family: 'Roboto-Thin',sans-serif;
+      }
+
+      input:focus {
+        border: 3px solid $green;
+      }
+
+      input[type=submit] {
+        border:none;
+      }
+
+      div {
+      	padding: 50px 110px 255px 110px;
+      	background-color:#3f3e44;
+      	border-top: 6px solid $green;
+
+      	p {
+      		margin-top: 40px;
+
+      	}
+
+      	.push-btn {
+          width: 350px;
+          height: 90px;
+          float: right;
+          border: none;
+          border-radius: 9px;
+          font-size: 45px;
+          font-weight: 100;
+          font-family: 'Roboto-Thin',sans-serif;
+          color: #ffffff;
+          background-color:$green;
+          box-shadow: inset -9px -9px 0px 0px #30966e;
+          cursor: pointer;
+          transition: all .3s;
+          margin:70px 0 0 0;
+          outline: none;
+        }
+
+        .push-btn:active {
+           box-shadow: none;
+           margin: 79px 0 0 9px;
+           height: 81px;
+           width: 341px;
+        }
+      }
+
+      .button-container {
+      	padding:0;
+      	border-top:none;
+      	display: -webkit-flex;
+      	display: -ms-flexbox;
+      	display: flex;
+      	-webkit-justify-content: center;
+      	    -ms-flex-pack: center;
+      	        justify-content: center;
+
+        .push-btn {
+        	float: none;
+        }
+      }
+
+      #tab3 {
+      	padding-bottom: 100px;
+      }
+
+
+      .etabs {
+      	display: -webkit-flex;
+      	display: -ms-flexbox;
+      	display: flex;
+      	-webkit-justify-content: space-between;
+      	    -ms-flex-pack: justify;
+      	        justify-content: space-between;
+
+      	.tab {
+      		-webkit-flex-wrap: nowrap;
+      		    -ms-flex-wrap: nowrap;
+      		        flex-wrap: nowrap;
+      		background-color: #5a5a62;
+      		text-align: center;
+      		display: inline-block;
+      		border-radius: 9px 9px 0px 0px;
+      		border: 6px solid $green;
+      		border-bottom:0px;
+      		font-size: 40px;
+      		font-family: 'Roboto-Thin',sans-serif;
+      		padding: 0px 17px;
+      		cursor: pointer;
+
+      		a:focus {
+      			outline: none;
+      			border:none;
+      		}
+      	}
+
+        .tab:focus {
+        	outline: none;
+        }
+
+      	.active-tab {
+      		background-color: #3f3e44;
+      	}
+      }
+
+      .select {
+        background: url(../images/search-select-arrow.png) no-repeat #ffffff;
+        background-position: 100% 50%;
+        border-radius: 9px;
+        width: 100%;
+        padding: 0;
+        height: 90px;
+        border-top:none;
+
+      }
+
+      .select >select:active,
+      .select> select:focus {
+        border:none;
+        outline: none;
+      }
+
+      select > option {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+      }
+
+      select > option:hover,
+      select > option:focus {
+      	background-color:$green;
+      }
+
+      .select> select {
+      	line-height: 90px;
+        color: #5a5a62;
+        padding: 0 50px 0 10px;
+        font-family: 'Roboto-Thin',sans-serif;
+        width: 100%;
+        font-size: 35px;
+        background: transparent;
+        border: 0;
+        overflow: hidden;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        height: 90px;
+        outline: none;
+        cursor: pointer;
+        max-height: 230px;
+      }
+    }
+  }
+
+
+  .active-popup {
+    display: block;
+  }
+}

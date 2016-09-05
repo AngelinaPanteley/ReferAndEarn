@@ -1,0 +1,105 @@
+.registration-page,
+.sign-in-page {
+
+  .main-block {
+
+    .registration-box,
+    .sign-in-box {
+
+      .center-container {
+        width: 765px;
+        margin: 0 auto;
+      }
+
+      .flex-block-row {
+        width: 100%;
+       display: -webkit-flex;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-flex-direction: row;
+           -ms-flex-direction: row;
+               flex-direction: row;
+       -webkit-justify-content: space-between;
+           -ms-flex-pack: space-between;
+               justify-content: space-between;
+       }
+
+       .step-box-1,
+       .step-box-2 {
+        font-family:'Roboto-Thin',sans-serif;
+        display: inline-block;
+        width: 500px;
+        background-color: #5a5a62;
+        text-align: center;
+        border-radius: 5px 5px 0px 0px;
+        border: 6px solid $green;
+        border-bottom:none;
+        cursor: context-menu;
+       }
+
+       .button-container {
+         background-color:#3f3e44;
+         padding-bottom: 114px;
+       }
+
+       .push-btn {
+        width: 350px;
+        height: 90px;
+        float: right;
+        border: none;
+        border-radius: 9px;
+        font-size: 45px;
+        font-weight: 100;
+        font-family: 'Roboto-Thin',sans-serif;
+        color: #ffffff;
+        background-color:$green;
+        box-shadow: inset -9px -9px 0px 0px #30966e;
+        cursor: pointer;
+        transition: all .3s;
+        margin:0;
+      }
+
+      .push-btn:active {
+         box-shadow: none;
+         margin: 9px 0 0 9px;
+         height: 81px;
+         width: 341px;
+      }
+
+      input {
+        width: 100%;
+        height: 90px;
+        border-radius:10px;
+        outline: none;
+        border: 3px solid #ffffff;
+        font-size: 50px;
+        line-height: 90px;
+        color: #3f3e44;
+        padding: 0 10px;
+        margin-bottom: 30px;
+      }
+
+      input:focus {
+        border: 3px solid $green;
+      }
+
+      input[type=submit] {
+        border:none;
+      }
+
+
+      span {
+        font-size: 25px;
+        margin-top: -35px;
+        display: inline-block;
+      }
+
+      h5 {
+        font-family: 'Cardo', sans-serif;
+        font-size: 70px;
+        line-height: 190px;
+        text-align: center;
+      }
+    }
+  }
+}

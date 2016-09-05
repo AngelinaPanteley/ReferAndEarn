@@ -65,19 +65,7 @@
         background-color: #30966e;
       }
 
-      .sign-in__icon {
-        color: #ffffff;
-        font-size:25px;
-        margin-left: 7px;
-        cursor: pointer;
-        transition: all .3s;
-      }
 
-      .sign-in__icon:hover {
-        color: $green;
-        text-shadow: 0 0 5px 5px $green;
-        transition: all .3s;
-      }
     }
   }
 }

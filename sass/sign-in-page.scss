@@ -1,0 +1,51 @@
+.sign-in-page {
+  .main-block {
+    .sign-in-box {
+      .email-sign-in-form {
+        padding-top: 110px;
+
+        a {
+          color: $green;
+        }
+
+        a:hover {
+          text-shadow: 0 0 2px $green;
+        }
+
+        .push-btn {
+          margin-top: 40px;
+        }
+
+        .push-btn:active {
+          margin-top: 49px;
+        }
+      }
+
+      .email-sign-in-form,
+      .social-sign-in {
+        background-color:#3f3e44;
+        width: 1010px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+
+
+        .social-icons {
+          font-size: 45px;
+          font-weight: 100;
+          margin-bottom: 70px;
+          margin-top: 60px;
+
+          .sign-in__icon {
+            font-size: 60px;
+            margin-right: 5px;
+          }
+
+        }
+      }
+    }
+  }
+}
