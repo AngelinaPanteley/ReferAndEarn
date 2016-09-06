@@ -10,6 +10,26 @@
     position: fixed;
   }
 
+  .tabs-popup-cls {
+  	height: 100px;
+    width: 100px;
+    color: #46ba8c;
+    font-size: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 6px solid #46ba8c;
+    text-align: center;
+    font-family: 'Roboto-Thin';
+    line-height: 88px;
+    position: absolute;
+    top: -112px;
+    right: -163px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    cursor: pointer;
+  }
+
   .tabs-popup {
   	display: none;
     top: 115px;
