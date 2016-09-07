@@ -1,6 +1,17 @@
 .account-page {
-	color: #3f3e44;
+  color: #3f3e44;
   font-family: 'Roboto-Thin',sans-serif;
+
+  .header .header__icon-box {
+    -ms-flex-pack: end;
+        -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+  }
+
+  h5 {
+    color: #3f3e44;
+    margin-bottom: 30px;
+  }
 
   .push-btn {
     width: 350px;
@@ -27,7 +38,7 @@
     width: 341px;
   }
 
-	.central-row {
+  .central-row {
     .aside {
       padding: 55px;
       float: left;
@@ -42,34 +53,55 @@
         width: 250px;
         height: 250px;
         border-radius: 50%;
+        margin-bottom: 30px;
+      }
+
+      .menu {
+        text-align: left;
+
+        li {
+          height: 65px;
+          border-bottom:none;
+        }
+
+        li:last-child {
+          margin-top: 55px;
+        }
+
+        li a {
+          font-family: 'Roboto-Thin',sans-serif;
+          font-size: 45px;
+          line-height: 65px;
+          text-align: left;
+        }
       }
     }
 
     .main-form {
-    	padding: 80px 95px 130px 690px;
-    	float: left;
-      display: -webkit-flex;
+      padding: 80px 95px 130px 690px;
+      float: left;
       display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
+      -ms-flex-direction: column;
+          -webkit-flex-direction: column;
               flex-direction: column;
-      -webkit-justify-content: left;
-          -ms-flex-pack: left;
+      -ms-flex-pack: left;
+          -webkit-justify-content: left;
               justify-content: left;
       font-size: 35px;
       line-height: 60px;
 
 
-    	h4 {
-    		line-height: 190px;
-    		text-align: left;
-    	}
+      h4 {
+        line-height: 190px;
+        text-align: left;
+      }
 
-    	input[type=text] {
-    		height: 90px;
-    		border-radius: 9px;
-    		border:3px solid #5a5a62;
+      input[type=text] {
+        height: 90px;
+        border-radius: 9px;
+        border:3px solid #5a5a62;
         width: 765px;
         outline: none;
         font-size: 35px;
@@ -78,37 +110,46 @@
         font-family: 'Roboto-Thin',sans-serif;
         transition: all .3s;
         margin-bottom: 30px;
-    	}
+      }
 
-    	input:focus {
-    		border: 3px solid $green;
-    		transition: all .3s;
-    	}
+      input:focus {
+        border: 3px solid $green;
+        transition: all .3s;
+      }
 
-    	.choose-profile-photo-box {
+      select {
+      	width: 100%;
+      	margin-bottom: 35px;
+      }
+
+
+
+      .choose-profile-photo-box {
         margin-bottom: 10px;
 
-    		.profile-photo {
-    			border-radius:50%;
-    			width: 200px;
-    			height: 200px;
-    			border: 3px solid #5a5a62;
-    			float: left;
-    			margin-right: 30px;
-    		}
+        .profile-photo {
+          border-radius:50%;
+          width: 200px;
+          height: 200px;
+          border: 3px solid #5a5a62;
+          float: left;
+          margin-right: 30px;
+        }
 
-    		.push-btn {
-    			float: left;
-    			width: 200px;
-    			height: 45px;
-    			font-size: 25px;
-    			line-height: 45px;
-    		}
+        .push-btn {
+          float: left;
+          width: 200px;
+          height: 45px;
+          font-size: 25px;
+          line-height: 45px;
+        }
 
-    		p {
-    			margin-top: 40px;
-    		}
-    	}
+        p {
+          margin-top: 40px;
+        }
+      }
+
+
     }
   }
 }

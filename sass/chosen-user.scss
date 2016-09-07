@@ -1,0 +1,70 @@
+.account-page,
+.product-page {
+
+      .chosen-container {
+        width: 100% !important;
+        font-size: 35px;
+        margin-bottom: 35px;
+      }
+
+      .chosen-container-single .chosen-default {
+        color: #3f3e44;
+      }
+
+      .chosen-container-single .chosen-single {
+        height: 90px;
+        border:3px solid #5a5a62;
+        line-height: 90px;
+        background: #ffffff;
+        border-radius:9px;
+      }
+
+      .chosen-container-active.chosen-with-drop .chosen-single {
+        border-radius: 9px 9px 0px 0px;
+      }
+
+      .chosen-container-single .chosen-single div {
+        width: 65px;
+        height: 90px;
+        border:3px solid #5a5a62;
+        background-color: $green;
+        top: -3px;
+        right: -3px;
+        border-radius: 8px;
+        text-align: center;
+        padding-top: 35px;
+      }
+
+      .chosen-container-single .chosen-single div b {
+        display: inline-block;
+        width: 28px;
+        height: 16px;
+        background: url('../images/sprite.png') no-repeat -367px 0px;
+      }
+
+      .chosen-container .chosen-drop {
+        box-shadow:none;
+        border:3px solid #5a5a62;
+        border-top:none;
+      }
+
+      .chosen-container-single .chosen-drop {
+        margin-top: 0px;
+      }
+
+      .chosen-container .chosen-results {
+        padding:0;
+        margin: 0 1px 4px 0;
+      }
+
+      .chosen-container .chosen-results li {
+        line-height: 40px;
+        margin-right: 1px;
+      }
+
+      .chosen-container .chosen-results li.highlighted {
+        background-color: $green;
+        background-image: linear-gradient(#379670 20%, #46ba8c 90%);
+        color: #fff;
+      }
+}

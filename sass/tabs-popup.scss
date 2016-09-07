@@ -11,7 +11,7 @@
   }
 
   .tabs-popup-cls {
-  	height: 100px;
+    height: 100px;
     width: 100px;
     color: #46ba8c;
     font-size: 100px;
@@ -31,7 +31,7 @@
   }
 
   .tabs-popup {
-  	display: none;
+    display: none;
     top: 115px;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -46,7 +46,7 @@
 
     .tab-container {
 
-    	input {
+      input {
         width: 100%;
         height: 90px;
         border-radius:10px;
@@ -68,17 +68,21 @@
         border:none;
       }
 
-      div {
-      	padding: 50px 110px 255px 110px;
-      	background-color:#3f3e44;
-      	border-top: 6px solid $green;
+      .tab-box {
+        padding: 50px 110px 255px 110px;
+        background-color:#3f3e44;
+        border-top: 6px solid $green;
 
-      	p {
-      		margin-top: 40px;
+        select {
+          width: 770px;
+        }
 
-      	}
+        p {
+          margin-top: 40px;
 
-      	.push-btn {
+        }
+
+        .push-btn {
           width: 350px;
           height: 90px;
           float: right;
@@ -105,61 +109,61 @@
       }
 
       .button-container {
-      	padding:0;
-      	border-top:none;
-      	display: -webkit-flex;
-      	display: -ms-flexbox;
-      	display: flex;
-      	-webkit-justify-content: center;
-      	    -ms-flex-pack: center;
-      	        justify-content: center;
+        padding:0;
+        border-top:none;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
 
         .push-btn {
-        	float: none;
+          float: none;
         }
       }
 
       #tab3 {
-      	padding-bottom: 100px;
+        padding-bottom: 100px;
       }
 
 
       .etabs {
-      	display: -webkit-flex;
-      	display: -ms-flexbox;
-      	display: flex;
-      	-webkit-justify-content: space-between;
-      	    -ms-flex-pack: justify;
-      	        justify-content: space-between;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
 
-      	.tab {
-      		-webkit-flex-wrap: nowrap;
-      		    -ms-flex-wrap: nowrap;
-      		        flex-wrap: nowrap;
-      		background-color: #5a5a62;
-      		text-align: center;
-      		display: inline-block;
-      		border-radius: 9px 9px 0px 0px;
-      		border: 6px solid $green;
-      		border-bottom:0px;
-      		font-size: 40px;
-      		font-family: 'Roboto-Thin',sans-serif;
-      		padding: 0px 17px;
-      		cursor: pointer;
+        .tab {
+          -webkit-flex-wrap: nowrap;
+              -ms-flex-wrap: nowrap;
+                  flex-wrap: nowrap;
+          background-color: #5a5a62;
+          text-align: center;
+          display: inline-block;
+          border-radius: 9px 9px 0px 0px;
+          border: 6px solid $green;
+          border-bottom:0px;
+          font-size: 40px;
+          font-family: 'Roboto-Thin',sans-serif;
+          padding: 0px 17px;
+          cursor: pointer;
 
-      		a:focus {
-      			outline: none;
-      			border:none;
-      		}
-      	}
-
-        .tab:focus {
-        	outline: none;
+          a:focus {
+            outline: none;
+            border:none;
+          }
         }
 
-      	.active-tab {
-      		background-color: #3f3e44;
-      	}
+        .tab:focus {
+          outline: none;
+        }
+
+        .active-tab {
+          background-color: #3f3e44;
+        }
       }
 
       .select {
@@ -187,11 +191,11 @@
 
       select > option:hover,
       select > option:focus {
-      	background-color:$green;
+        background-color:$green;
       }
 
       .select> select {
-      	line-height: 90px;
+        line-height: 90px;
         color: #5a5a62;
         padding: 0 50px 0 10px;
         font-family: 'Roboto-Thin',sans-serif;

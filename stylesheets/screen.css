@@ -3,8 +3,6 @@
 @import url(flaticon.css);
 @import url(flexslider.css);
 @import url(chosen.css);
-@import url(style.css);
-@import url(prism.css);
 /*base*/
 *,
 *:before,
@@ -28,6 +26,17 @@
 .central-row {
   position: relative;
   padding-right: 120px; }
+
+::-webkit-scrollbar {
+  background-color: #ffffff;
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #46ba8c; }
 
 /*fonts*/
 h1 {
@@ -1142,13 +1151,15 @@ body {
     border: 3px solid #46ba8c; }
   .product-page .tabs-popup .tab-container input[type=submit] {
     border: none; }
-  .product-page .tabs-popup .tab-container div {
+  .product-page .tabs-popup .tab-container .tab-box {
     padding: 50px 110px 255px 110px;
     background-color: #3f3e44;
     border-top: 6px solid #46ba8c; }
-    .product-page .tabs-popup .tab-container div p {
+    .product-page .tabs-popup .tab-container .tab-box select {
+      width: 770px; }
+    .product-page .tabs-popup .tab-container .tab-box p {
       margin-top: 40px; }
-    .product-page .tabs-popup .tab-container div .push-btn {
+    .product-page .tabs-popup .tab-container .tab-box .push-btn {
       width: 350px;
       height: 90px;
       float: right;
@@ -1164,7 +1175,7 @@ body {
       transition: all .3s;
       margin: 70px 0 0 0;
       outline: none; }
-    .product-page .tabs-popup .tab-container div .push-btn:active {
+    .product-page .tabs-popup .tab-container .tab-box .push-btn:active {
       box-shadow: none;
       margin: 79px 0 0 9px;
       height: 81px;
@@ -1251,6 +1262,13 @@ body {
 .account-page {
   color: #3f3e44;
   font-family: 'Roboto-Thin',sans-serif; }
+  .account-page .header .header__icon-box {
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end; }
+  .account-page h5 {
+    color: #3f3e44;
+    margin-bottom: 30px; }
   .account-page .push-btn {
     width: 350px;
     height: 90px;
@@ -1284,18 +1302,31 @@ body {
     .account-page .central-row .aside .aside-profile-photo {
       width: 250px;
       height: 250px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      margin-bottom: 30px; }
+    .account-page .central-row .aside .menu {
+      text-align: left; }
+      .account-page .central-row .aside .menu li {
+        height: 65px;
+        border-bottom: none; }
+      .account-page .central-row .aside .menu li:last-child {
+        margin-top: 55px; }
+      .account-page .central-row .aside .menu li a {
+        font-family: 'Roboto-Thin',sans-serif;
+        font-size: 45px;
+        line-height: 65px;
+        text-align: left; }
   .account-page .central-row .main-form {
     padding: 80px 95px 130px 690px;
     float: left;
-    display: -webkit-flex;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
-    -webkit-justify-content: left;
     -ms-flex-pack: left;
+    -webkit-justify-content: left;
     justify-content: left;
     font-size: 35px;
     line-height: 60px; }
@@ -1317,6 +1348,9 @@ body {
     .account-page .central-row .main-form input:focus {
       border: 3px solid #46ba8c;
       transition: all .3s; }
+    .account-page .central-row .main-form select {
+      width: 100%;
+      margin-bottom: 35px; }
     .account-page .central-row .main-form .choose-profile-photo-box {
       margin-bottom: 10px; }
       .account-page .central-row .main-form .choose-profile-photo-box .profile-photo {
@@ -1334,5 +1368,62 @@ body {
         line-height: 45px; }
       .account-page .central-row .main-form .choose-profile-photo-box p {
         margin-top: 40px; }
+
+.account-page .chosen-container,
+.product-page .chosen-container {
+  width: 100% !important;
+  font-size: 35px;
+  margin-bottom: 35px; }
+.account-page .chosen-container-single .chosen-default,
+.product-page .chosen-container-single .chosen-default {
+  color: #3f3e44; }
+.account-page .chosen-container-single .chosen-single,
+.product-page .chosen-container-single .chosen-single {
+  height: 90px;
+  border: 3px solid #5a5a62;
+  line-height: 90px;
+  background: #ffffff;
+  border-radius: 9px; }
+.account-page .chosen-container-active.chosen-with-drop .chosen-single,
+.product-page .chosen-container-active.chosen-with-drop .chosen-single {
+  border-radius: 9px 9px 0px 0px; }
+.account-page .chosen-container-single .chosen-single div,
+.product-page .chosen-container-single .chosen-single div {
+  width: 65px;
+  height: 90px;
+  border: 3px solid #5a5a62;
+  background-color: #46ba8c;
+  top: -3px;
+  right: -3px;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 35px; }
+.account-page .chosen-container-single .chosen-single div b,
+.product-page .chosen-container-single .chosen-single div b {
+  display: inline-block;
+  width: 28px;
+  height: 16px;
+  background: url("../images/sprite.png") no-repeat -367px 0px; }
+.account-page .chosen-container .chosen-drop,
+.product-page .chosen-container .chosen-drop {
+  box-shadow: none;
+  border: 3px solid #5a5a62;
+  border-top: none; }
+.account-page .chosen-container-single .chosen-drop,
+.product-page .chosen-container-single .chosen-drop {
+  margin-top: 0px; }
+.account-page .chosen-container .chosen-results,
+.product-page .chosen-container .chosen-results {
+  padding: 0;
+  margin: 0 1px 4px 0; }
+.account-page .chosen-container .chosen-results li,
+.product-page .chosen-container .chosen-results li {
+  line-height: 40px;
+  margin-right: 1px; }
+.account-page .chosen-container .chosen-results li.highlighted,
+.product-page .chosen-container .chosen-results li.highlighted {
+  background-color: #46ba8c;
+  background-image: linear-gradient(#379670 20%, #46ba8c 90%);
+  color: #fff; }
 
 /*# sourceMappingURL=screen.css.map */
