@@ -68,3 +68,22 @@
         color: #fff;
       }
 }
+
+.product-page {
+
+  .tabs-popup .chosen-container-single .chosen-single {
+    border:none;
+  }
+
+  .chosen-container-single .chosen-single div {
+    border:none;
+    height: 93px;
+    right: -1px;
+    border-radius: 9px;
+    padding-top: 40px;
+  }
+
+  .chosen-container .chosen-drop {
+    border: none;
+  }
+}

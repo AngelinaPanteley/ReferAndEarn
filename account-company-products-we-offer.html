@@ -6,7 +6,7 @@
   <meta charset="utf-8"/>
 </head>
 <body>
- <div class="wrapper account-page">
+ <div class="wrapper account-page products-we-offer-page">
    <div class="content">
      <header class="header">
       <a href=""><img src="images/white-logo.png"></a>
@@ -27,39 +27,50 @@
            <li><a href="">Log Out</a></li>
          </ul>
        </aside>
-       <form class="main-form">
-         <h4>Settings</h4>
-         <p>Company name:</p>
-         <input type="text" name="company-name">
-         <p>Company email:</p>
-         <input type="text" name="company-email">
-         <p>Company phone:</p>
-         <input type="text" name="company-phone">
-         <p>Company website:</p>
-         <input type="text" name="company-website">
-         <p>Time zone:</p>
-         <select data-placeholder="GMT +4:00 DST+1" class="chosen-select" tabindex="2">
-            <option value=""></option>
-            <option value="GMT +4:00 DST+1">GMT +4:00 DST+1</option>
-            <option value="GMT -4:00 DST+1">GMT -4:00 DST+1</option>
-            <option value="GMT +3:00 DST+1">GMT +3:00 DST+1</option>
-            <option value="GMT -3:00 DST+1">GMT -3:00 DST+1</option>
-            <option value="GMT +2:00 DST+1">GMT +2:00 DST+1</option>
-            <option value="GMT -2:00 DST+1">GMT -2:00 DST+1</option>
-            <option value="GMT +1:00 DST+1">GMT +1:00 DST+1</option>
-            <option value="GMT -1:00 DST+1">GMT -1:00 DST+1</option>
-         </select>
-
-         <div class="choose-profile-photo-box row">
-           <div class="profile-photo-container"><img src="trash/profile-photo.png" class="profile-photo">
-            </div>
-           <p>My picture</p>
-           <button class="push-btn">Pick a file</button>
-         </div>
+       <div class="main-block">
          <div class="row">
-           <input type="submit" name="accept" class="push-btn" value="Accept">
+           <h4 class="left">Products we offer</h4>
+           <a href="" class="push-btn">Add</a>
          </div>
-       </form>
+         <div class="flex-container">
+           <div class="product-box">
+             <div class="row">
+               <img src="images/iphone6s.jpeg" class="product-photo left" >
+               <span class="product-title left">Smartphone iPhone 6S</span>
+             </div>
+             <div class="characteristics">
+               <div class="row">
+                 <span class="product-characteristic">Price</span>
+                 <span class="product-value">
+                 $600</span>
+               </div>
+               <div class="row">
+                 <span class="product-characteristic">Category</span>
+                 <span class="product-value">
+                 Phones</span>
+               </div>
+               <div class="row">
+                 <span class="product-characteristic">Company</span>
+                 <span class="product-value">
+                 Apple inc.</span>
+               </div>
+               <div class="row">
+                 <span class="product-characteristic">Model</span>
+                 <span class="product-value">
+                 iPhone 6S</span>
+               </div>
+               <div class="row">
+                 <span class="product-characteristic">Description:</span>
+               </div>
+               <p class="product-description">64GB, 4.7-inch display, Available in gold, silver, space gray</p>
+             </div>
+
+           </div>
+           <div class="product-box">
+
+           </div>
+         </div>
+       </div>
      </div>
    </div>
    <footer class="footer">

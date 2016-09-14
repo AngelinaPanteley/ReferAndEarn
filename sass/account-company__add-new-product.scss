@@ -1,0 +1,137 @@
+.add-new-product-page,
+.edit-product-page {
+  .central-row {
+   .main-form {
+    .choose-profile-photo-box {
+
+      p {
+        margin-top: 0px;
+      }
+
+      .push-btn {
+        margin-bottom: 30px;
+      }
+
+      .push-btn:active {
+        margin-bottom: 21px;
+      }
+
+      .flex-container {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-justify-content:flex-start;
+            -ms-flex-pack:start;
+                justify-content:flex-start;
+        -webkit-flex-wrap:wrap;
+            -ms-flex-wrap:wrap;
+                flex-wrap:wrap;
+
+        margin-bottom: 35px;
+
+        .make-main-label {
+          margin-right:48px;
+        }
+
+        .make-main-label:nth-child(4n) {
+          margin-right:0px;
+        }
+
+        .make-main-radio {
+          opacity: 0;
+        }
+
+        .make-main-radio+.make-main-span {
+          cursor: pointer;
+          transition: all .1s;
+          line-height: 40px;
+          font-size: 25px;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-align-items:center;
+              -ms-flex-align:center;
+                  align-items:center;
+        }
+
+        .make-main-radio+.make-main-span:after {
+          content:"Make main";
+        }
+
+        .make-main-radio:checked+.make-main-span:after {
+          content: "Main";
+        }
+
+        .profile-photo-container {
+          position:relative;
+          transition: all .2s;
+          margin-right: 0px;
+          border-radius:9px;
+          width: 170px;
+          height: 170px;
+          border: 3px solid #cacaca;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -ms-flex-align:center;
+          -webkit-align-items:center;
+              align-items:center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+
+          .profile-photo {
+            width: 100%;
+            border-radius:9px;
+            border:none;
+            height: initial;
+            max-height: 170px;
+            float: none;
+          }
+
+        }
+
+        .profile-photo-container-hover {
+          cursor: pointer;
+          line-height: 170px;
+          font-size: 65px;
+          color: #ffffff;
+          text-align: center;
+          opacity: 0;
+          transition: all .3s;
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          border-radius:6px;
+        }
+
+        .profile-photo-container:hover .profile-photo-container-hover{
+          opacity: 1;
+          transition: all .3s;
+          background-color: rgba(70,186,140,0.8);
+        }
+
+        .make-main-radio:checked+.make-main-span {
+          transition: all .1s;
+          font-family: 'Roboto',sans-serif;
+          color: $green;
+
+          .profile-photo-container {
+            border:3px solid $green;
+            transition: all .2s;
+          }
+        }
+      }
+    }
+  }
+ }
+}

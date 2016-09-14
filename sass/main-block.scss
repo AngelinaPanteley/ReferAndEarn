@@ -125,3 +125,14 @@
   }
 }
 
+.main-container {
+  width: 100%;
+  min-width: 1555px;
+  float: left;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

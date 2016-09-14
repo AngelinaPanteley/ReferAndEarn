@@ -6,7 +6,7 @@
   <meta charset="utf-8"/>
 </head>
 <body>
- <div class="wrapper account-page">
+ <div class="wrapper account-page add-new-product-page">
    <div class="content">
      <header class="header">
       <a href=""><img src="images/white-logo.png"></a>
@@ -28,16 +28,16 @@
          </ul>
        </aside>
        <form class="main-form">
-         <h4>Settings</h4>
-         <p>Company name:</p>
+         <h4>Add a new product</h4>
+         <p>Enter your product name:</p>
          <input type="text" name="company-name">
-         <p>Company email:</p>
+         <p>Enter your company name:</p>
          <input type="text" name="company-email">
-         <p>Company phone:</p>
+         <p>Enter the model:</p>
          <input type="text" name="company-phone">
-         <p>Company website:</p>
+         <p>Enter the price:</p>
          <input type="text" name="company-website">
-         <p>Time zone:</p>
+         <p>Pick a category:</p>
          <select data-placeholder="GMT +4:00 DST+1" class="chosen-select" tabindex="2">
             <option value=""></option>
             <option value="GMT +4:00 DST+1">GMT +4:00 DST+1</option>
@@ -49,12 +49,60 @@
             <option value="GMT +1:00 DST+1">GMT +1:00 DST+1</option>
             <option value="GMT -1:00 DST+1">GMT -1:00 DST+1</option>
          </select>
-
-         <div class="choose-profile-photo-box row">
-           <div class="profile-photo-container"><img src="trash/profile-photo.png" class="profile-photo">
-            </div>
-           <p>My picture</p>
-           <button class="push-btn">Pick a file</button>
+         <p>Description:</p>
+         <input type="text" name="company-website">
+         <div class="choose-profile-photo-box">
+           <div class="row">
+             <p>Add pictures:</p>
+             <button class="push-btn">Pick a file</button>
+           </div>
+           <div class="flex-container">
+            <label class="make-main-label"><input class ="make-main-radio" type="radio" name="make-main" checked="checked" /> <span class="make-main-span">
+              <div class="profile-photo-container">
+                <img src="trash/iphone6s.jpeg" class="profile-photo" />
+                <div class="profile-photo-container-hover">
+                  <i class="flaticon-garbage-2"></i>
+                </div>
+              </div>
+             </span>
+            </label>
+            <label class="make-main-label"><input class ="make-main-radio" type="radio" name="make-main"/> <span class="make-main-span">
+              <div class="profile-photo-container">
+                <img src="trash/iphone6s.jpeg" class="profile-photo" />
+                <div class="profile-photo-container-hover">
+                  <i class="flaticon-garbage-2"></i>
+                </div>
+              </div>
+             </span>
+            </label>
+            <label class="make-main-label"><input class ="make-main-radio" type="radio" name="make-main"/> <span class="make-main-span">
+              <div class="profile-photo-container">
+                <img src="trash/iphone6s.jpeg" class="profile-photo" />
+                <div class="profile-photo-container-hover">
+                  <i class="flaticon-garbage-2"></i>
+                </div>
+              </div>
+             </span>
+            </label>
+            <label class="make-main-label"><input class ="make-main-radio" type="radio" name="make-main"/> <span class="make-main-span">
+              <div class="profile-photo-container">
+                <img src="trash/iphone6s.jpeg" class="profile-photo" />
+                <div class="profile-photo-container-hover">
+                  <i class="flaticon-garbage-2"></i>
+                </div>
+              </div>
+             </span>
+            </label>
+            <label class="make-main-label"><input class ="make-main-radio" type="radio" name="make-main"/> <span class="make-main-span">
+              <div class="profile-photo-container">
+                <img src="trash/iphone6s.jpeg" class="profile-photo" />
+                <div class="profile-photo-container-hover">
+                  <i class="flaticon-garbage-2"></i>
+                </div>
+              </div>
+             </span>
+            </label>
+           </div>
          </div>
          <div class="row">
            <input type="submit" name="accept" class="push-btn" value="Accept">
