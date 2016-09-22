@@ -1,6 +1,7 @@
 .add-new-product-page,
 .edit-product-page {
   .central-row {
+
    .main-form {
     .choose-profile-photo-box {
 
@@ -33,7 +34,7 @@
         margin-bottom: 35px;
 
         .make-main-label {
-          margin-right:48px;
+          margin-right:29px;
         }
 
         .make-main-label:nth-child(4n) {
@@ -134,4 +135,11 @@
     }
   }
  }
+}
+
+.add-new-product-page {
+
+  .aside .menu li .menu-item__add-product {
+    color: $green;
+  }
 }

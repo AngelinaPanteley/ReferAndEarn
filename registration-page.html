@@ -16,7 +16,7 @@
      </header>
      <div class="main-block">
        <h4>Registration</h4>
-       <div class="registration-box step-2"><!--choose "step-1" or "step-2"-->
+       <div class="registration-box step-1"><!--choose "step-1" or "step-2"-->
          <div class="flex-block-row">
            <span class="step-box-1">Step 1</span>
            <span class="step-box-2">Step 2</span>
@@ -26,32 +26,35 @@
              <div class="center-container">
               <h5>Pick your account type:</h5>
               <div class="flex-block-row">
-                <label class="registration-form__label-radio"><input class ="registration-form__radio" type="radio" name="account-type" checked="checked" /><span class="registration-form__radio-span">individual</span></label>
-                <label class="registration-form__label-radio"><input class ="registration-form__radio" type="radio" name="account-type"/><span class="registration-form__radio-span">company</span></label>
+                <label class="registration-form__label-radio"><input class ="registration-form__radio registration-form__radio__individual" type="radio" name="account-type" checked="checked" /><span class="registration-form__radio-span">individual</span>
+                </label>
+                <label class="registration-form__label-radio"><input class ="registration-form__radio registration-form__radio__company" type="radio" name="account-type"/><span class="registration-form__radio-span">company</span>
+                </label>
               </div>
              </div>
             </div>
-            <div class="profile-creation-block">
+          <div class="state-block company-state"><!--states: individual-state or company-state-->
+            <div class="profile-creation-block individual-creation">
              <div class="center-container">
               <h5>Create a new profile</h5>
               <div class="flex-block-row">
                <div>
                  <p>Enter your first name</p>
-                 <input type="text" name="first-name"/>
+                 <input type="text" name="individual-first-name"/>
                </div>
                <div>
                  <p>Enter your last name</p>
-                 <input type="text" name="last-name"/>
+                 <input type="text" name="individual-last-name"/>
                </div>
               </div>
               <p>Enter your email address</p>
-              <input type="text" name="email"/>
+              <input type="text" name="individual-email"/>
               <p>Create your password</p>
-              <input type="password" name="password-1"/>
+              <input type="password" name="individual-password-1"/>
               <p>Confirm your password</p>
-              <input type="password" name="password-2"/>
+              <input type="password" name="individual-password-2"/>
               <p>Enter your phone number</p>
-              <input type="text" name="phone"/>
+              <input type="text" name="individual-phone"/>
               <span>We will send you SMS with a confirmation code</span>
               <p class="social-icons">Sign in with:
                 <a href=""><i class="icon-facebook sign-in__icon"></i></a>
@@ -61,6 +64,24 @@
               </p>
              </div>
             </div>
+            <div class="profile-creation-block company-creation">
+             <div class="center-container">
+              <h5>Create a new profile</h5>
+              <p>Enter the name of your company</p>
+              <input type="text" name="company-name"/>
+              <p>Enter company email address</p>
+              <input type="text" name="company-email"/>
+              <p>Create password</p>
+              <input type="password" name="company-password-1"/>
+              <p>Confirm password</p>
+              <input type="password" name="company-password-2"/>
+              <p>Enter your phone number</p>
+              <input type="text" name="company-phone"/>
+              <span>We will send you SMS with a confirmation code</span>
+             </div>
+            </div>
+          </div>
+
             <div class="button-container">
               <div class="center-container row">
                 <input type="submit" name="push-btn" value="Next step >>" class="push-btn" />
@@ -111,5 +132,8 @@
         info@referandearn.com</p>
       </div>
    </footer>
+  </div>
+
+
 </body>
 </html>

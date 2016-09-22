@@ -6,7 +6,7 @@
   <meta charset="utf-8"/>
 </head>
 <body>
- <div class="wrapper account-page">
+ <div class="wrapper account-page account-company-settings">
    <div class="content">
      <header class="header">
       <a href=""><img src="images/white-logo.png"></a>
@@ -19,16 +19,17 @@
          <img src="trash/profile-photo.png" class="aside-profile-photo" />
          <h5>Apple inc.</h5>
          <ul class="menu">
-           <li><a href="">Products we offer</a></li>
-           <li><a href="">Referral campaigns</a></li>
-           <li><a href="">Add product</a></li>
-           <li><a href="">Add campaign</a></li>
-           <li><a href="">Settings</a></li>
-           <li><a href="">Log Out</a></li>
+           <li><a href="" class="menu-item__products-we-offer">Products we offer</a></li>
+           <li><a href="" class="menu-item__referral-campaigns">Referral campaigns</a></li>
+           <li><a href="" class="menu-item__add-product">Add product</a></li>
+           <li><a href="" class="menu-item__add-campaign">Add campaign</a></li>
+           <li><a href="" class="menu-item__settings">Settings</a></li>
+           <li><a href="" class="menu-item__log-out">Log Out</a></li>
          </ul>
        </aside>
-       <form class="main-form">
+       <div class="main-block">
          <h4>Settings</h4>
+        <form class="main-form">
          <p>Company name:</p>
          <input type="text" name="company-name">
          <p>Company email:</p>
@@ -60,6 +61,7 @@
            <input type="submit" name="accept" class="push-btn" value="Accept">
          </div>
        </form>
+      </div>
      </div>
    </div>
    <footer class="footer">

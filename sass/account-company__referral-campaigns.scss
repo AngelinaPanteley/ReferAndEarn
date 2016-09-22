@@ -1,5 +1,9 @@
 .referral-campaigns-page {
 
+  .aside .menu li .menu-item__referral-campaigns {
+    color: $green;
+  }
+
   .main-container {
     min-width: 1300px;
     float: none;
@@ -9,22 +13,25 @@
     font-size: 35px;
     line-height: 35px;
     text-align: center;
-    margin-top: 110px;
+    margin-top: 55px;
     margin-left: 50px;
     padding-top:5px;
     width: 290px;
   }
 
   .push-btn:active {
-    margin: 119px 0 0 59px;
+    margin: 64px 0 0 59px;
     width: 281px;
   }
 
 
-  .main-block {
+  .central-row .main-block {
     float: none;
     max-width: 1145px;
     padding-bottom: 145px;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
   h4 {

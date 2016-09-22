@@ -1,0 +1,21 @@
+.account-individual-page {
+
+  .aside .menu li {
+  	padding: 0;
+  }
+
+  .central-row .aside .menu .li__desired-products,
+  .central-row .aside .menu .li__products-i-recommend {
+    height: 90px;
+    margin: 20px 0;
+
+    .menu-item__desired-products,
+    .menu-item__products-i-recommend {
+      line-height: 30px;
+    }
+  }
+
+  .central-row .aside .menu .li__products-i-recommend {
+  	margin-bottom: 30px;
+  }
+}

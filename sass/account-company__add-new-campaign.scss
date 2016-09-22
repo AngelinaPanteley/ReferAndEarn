@@ -1,7 +1,24 @@
 .add-new-campaign-page {
 
-    .flex {
-        width: 100%;
-    }
+	.aside .menu li .menu-item__add-campaign {
+    color: $green;
+  }
 
+  .flex {
+     width: 100%;
+  }
+
+  .input-append-date-container {
+  	position: relative;
+
+
+    .calendar-container {
+  	  position: absolute;
+  	  right: 15px;
+      top: 15px;
+      font-size: 55px;
+      color: #717178;
+      cursor: pointer;
+    }
+  }
 }

@@ -453,17 +453,6 @@ body {
   .main-block .main-block__product-box:last-child {
     margin-bottom: 76px; }
 
-.main-container {
-  width: 100%;
-  min-width: 1555px;
-  float: left;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
 .aside .menu li .submenu-container {
   min-width: 369px;
   position: absolute;
@@ -738,13 +727,10 @@ body {
 .sign-in-page .main-block .registration-box .flex-block-row,
 .sign-in-page .main-block .sign-in-box .flex-block-row {
   width: 100%;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: space-between;
   justify-content: space-between; }
 .registration-page .main-block .registration-box .step-box-1,
@@ -768,6 +754,7 @@ body {
 .registration-page .main-block .sign-in-box .button-container,
 .sign-in-page .main-block .registration-box .button-container,
 .sign-in-page .main-block .sign-in-box .button-container {
+  padding-top: 80px;
   background-color: #3f3e44;
   padding-bottom: 114px; }
 .registration-page .main-block .registration-box .push-btn,
@@ -839,10 +826,8 @@ body {
 .registration-page .main-block .registration-box .registration-form,
 .sign-in-page .main-block .registration-box .registration-form {
   width: 1010px;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
   .registration-page .main-block .registration-box .registration-form .account-type,
@@ -897,7 +882,6 @@ body {
     .sign-in-page .main-block .registration-box .registration-form .profile-creation-block .social-icons {
       font-size: 45px;
       font-weight: 100;
-      margin-bottom: 70px;
       margin-top: 60px; }
       .registration-page .main-block .registration-box .registration-form .profile-creation-block .social-icons .sign-in__icon,
       .sign-in-page .main-block .registration-box .registration-form .profile-creation-block .social-icons .sign-in__icon {
@@ -909,10 +893,8 @@ body {
   width: 67px; }
 .registration-page .main-block,
 .sign-in-page .main-block {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   padding-bottom: 125px;
@@ -957,6 +939,14 @@ body {
   .registration-page .main-block .step-2 .step-box-2,
   .sign-in-page .main-block .step-2 .step-box-2 {
     background-color: #3f3e44; }
+
+.registration-page .individual-creation,
+.registration-page .company-creation {
+  display: none; }
+.registration-page .individual-state .individual-creation {
+  display: block; }
+.registration-page .company-state .company-creation {
+  display: block; }
 
 .sign-in-page .main-block .sign-in-box .email-sign-in-form {
   padding-top: 110px; }
@@ -1333,7 +1323,7 @@ body {
     -ms-flex-pack: center;
     justify-content: center; }
     .account-page .central-row .aside {
-      padding: 55px;
+      padding: 54px;
       float: left;
       background-color: #f5f5f5;
       position: absolute;
@@ -1358,6 +1348,7 @@ body {
           line-height: 65px;
           text-align: left; }
     .account-page .central-row .main-block {
+      min-width: 1050px;
       padding: 80px 0px 130px 0px;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -1365,9 +1356,9 @@ body {
       -ms-flex-direction: column;
       -webkit-flex-direction: column;
       flex-direction: column;
-      -ms-flex-pack: left;
-      -webkit-justify-content: left;
-      justify-content: left;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
       font-size: 35px;
       line-height: 60px; }
       .account-page .central-row .main-block .main-form {
@@ -1465,7 +1456,12 @@ body {
     background-color: #ffffff;
     color: #3f3e44;
     border: 3px solid #30966e;
+    border-bottom: none;
+    border-right: none;
     text-align: center; }
+
+.account-company-settings .aside .menu li .menu-item__settings {
+  color: #46ba8c; }
 
 .account-page .chosen-container,
 .product-page .chosen-container {
@@ -1535,6 +1531,8 @@ body {
 .product-page .chosen-container .chosen-drop {
   border: none; }
 
+.referral-campaigns-page .aside .menu li .menu-item__referral-campaigns {
+  color: #46ba8c; }
 .referral-campaigns-page .main-container {
   min-width: 1300px;
   float: none; }
@@ -1542,17 +1540,20 @@ body {
   font-size: 35px;
   line-height: 35px;
   text-align: center;
-  margin-top: 110px;
+  margin-top: 55px;
   margin-left: 50px;
   padding-top: 5px;
   width: 290px; }
 .referral-campaigns-page .push-btn:active {
-  margin: 119px 0 0 59px;
+  margin: 64px 0 0 59px;
   width: 281px; }
-.referral-campaigns-page .main-block {
+.referral-campaigns-page .central-row .main-block {
   float: none;
   max-width: 1145px;
-  padding-bottom: 145px; }
+  padding-bottom: 145px;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
 .referral-campaigns-page h4 {
   display: inline-block; }
 .referral-campaigns-page .campaigns-table {
@@ -1591,8 +1592,19 @@ body {
   .referral-campaigns-page .campaigns-table tr:last-child {
     border-bottom: none; }
 
+.add-new-campaign-page .aside .menu li .menu-item__add-campaign {
+  color: #46ba8c; }
 .add-new-campaign-page .flex {
   width: 100%; }
+.add-new-campaign-page .input-append-date-container {
+  position: relative; }
+  .add-new-campaign-page .input-append-date-container .calendar-container {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 55px;
+    color: #717178;
+    cursor: pointer; }
 
 .add-new-product-page .central-row .main-form .choose-profile-photo-box p,
 .edit-product-page .central-row .main-form .choose-profile-photo-box p {
@@ -1620,7 +1632,7 @@ body {
   margin-bottom: 35px; }
   .add-new-product-page .central-row .main-form .choose-profile-photo-box .flex-container .make-main-label,
   .edit-product-page .central-row .main-form .choose-profile-photo-box .flex-container .make-main-label {
-    margin-right: 48px; }
+    margin-right: 29px; }
   .add-new-product-page .central-row .main-form .choose-profile-photo-box .flex-container .make-main-label:nth-child(4n),
   .edit-product-page .central-row .main-form .choose-profile-photo-box .flex-container .make-main-label:nth-child(4n) {
     margin-right: 0px; }
@@ -1705,6 +1717,9 @@ body {
       border: 3px solid #46ba8c;
       transition: all .2s; }
 
+.add-new-product-page .aside .menu li .menu-item__add-product {
+  color: #46ba8c; }
+
 .edit-product-page .flex {
   width: 765px; }
 .edit-product-page .push-btn {
@@ -1718,20 +1733,37 @@ body {
 .edit-product-page .central-row .main-form .choose-profile-photo-box {
   margin-bottom: 35px; }
 
+.products-we-offer-page .aside .menu li .menu-item__products-we-offer {
+  color: #46ba8c; }
 .products-we-offer-page .row {
   width: 100%; }
 .products-we-offer-page .main-block {
-  width: 1140px;
+  max-width: 1140px;
   padding-bottom: 45px; }
 .products-we-offer-page .row .push-btn {
   float: right;
   width: 180px;
   text-align: center;
   line-height: 90px;
-  margin-top: 100px; }
+  margin-top: 50px; }
 .products-we-offer-page .row .push-btn:active {
   width: 171px;
-  margin-top: 109px; }
+  margin-top: 59px; }
+.products-we-offer-page .flex {
+  width: 100%; }
+  .products-we-offer-page .flex .push-btn {
+    margin: 0;
+    width: 210px;
+    height: 55px;
+    box-shadow: inset -4px -4px 0px 0px #30966e;
+    line-height: 55px;
+    font-size: 40px; }
+  .products-we-offer-page .flex .push-btn:active {
+    width: 206px;
+    margin-top: 4px;
+    margin-left: 4px; }
+  .products-we-offer-page .flex .white-push-btn {
+    line-height: 40px; }
 .products-we-offer-page .flex-container {
   width: 100%;
   display: -webkit-flex;
@@ -1778,10 +1810,85 @@ body {
       height: 108px;
       overflow: auto;
       border: 2px solid #5a5a62;
-      border-radius: 9px;
+      border-radius: 5px;
       margin: 20px 0 50px 0;
       padding: 15px 20px;
       font-size: 30px;
       line-height: 32px; }
+
+.account-individual-page .aside .menu li {
+  padding: 0; }
+.account-individual-page .central-row .aside .menu .li__desired-products,
+.account-individual-page .central-row .aside .menu .li__products-i-recommend {
+  height: 90px;
+  margin: 20px 0; }
+  .account-individual-page .central-row .aside .menu .li__desired-products .menu-item__desired-products,
+  .account-individual-page .central-row .aside .menu .li__desired-products .menu-item__products-i-recommend,
+  .account-individual-page .central-row .aside .menu .li__products-i-recommend .menu-item__desired-products,
+  .account-individual-page .central-row .aside .menu .li__products-i-recommend .menu-item__products-i-recommend {
+    line-height: 30px; }
+.account-individual-page .central-row .aside .menu .li__products-i-recommend {
+  margin-bottom: 30px; }
+
+.account-individual-my-earnings .aside .menu li .menu-item__my-earnings {
+  color: #46ba8c; }
+.account-individual-my-earnings .earning-tabs {
+  color: #3f3e44; }
+  .account-individual-my-earnings .earning-tabs a {
+    color: #3f3e44;
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
+  .account-individual-my-earnings .earning-tabs .tab-container {
+    min-height: 668px; }
+  .account-individual-my-earnings .earning-tabs .etabs {
+    min-width: 1140px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .account-individual-my-earnings .earning-tabs .etabs .tab {
+      height: 70px;
+      border: 3px solid #5a5a62;
+      border-bottom: none;
+      border-radius: 9px 9px 0px 0px;
+      text-align: center;
+      outline: none; }
+    .account-individual-my-earnings .earning-tabs .etabs .tab:active {
+      outline: none; }
+    .account-individual-my-earnings .earning-tabs .etabs .tab1 {
+      width: 240px; }
+    .account-individual-my-earnings .earning-tabs .etabs .tab2 {
+      width: 260px; }
+    .account-individual-my-earnings .earning-tabs .etabs .tab3 {
+      width: 300px; }
+    .account-individual-my-earnings .earning-tabs .etabs .tab4 {
+      width: 305px; }
+    .account-individual-my-earnings .earning-tabs .etabs .active-tab {
+      background-color: #46ba8c;
+      outline: none; }
+      .account-individual-my-earnings .earning-tabs .etabs .active-tab a {
+        color: #ffffff; }
+  .account-individual-my-earnings .earning-tabs .tab-box .earning-tab__table {
+    width: 100%;
+    font-size: 45px;
+    line-height: 50px; }
+    .account-individual-my-earnings .earning-tabs .tab-box .earning-tab__table thead td {
+      background-color: #46ba8c;
+      color: #ffffff;
+      border: 3px solid #5a5a62; }
+    .account-individual-my-earnings .earning-tabs .tab-box .earning-tab__table tr td {
+      padding: 25px;
+      text-align: center;
+      border: 3px solid #5a5a62; }
+    .account-individual-my-earnings .earning-tabs .tab-box .earning-tab__table .first-column {
+      width: 43%; }
+    .account-individual-my-earnings .earning-tabs .tab-box .earning-tab__table .second-column {
+      width: 33%; }
+    .account-individual-my-earnings .earning-tabs .tab-box .earning-tab__table .third-column {
+      width: 24%; }
 
 /*# sourceMappingURL=screen.css.map */

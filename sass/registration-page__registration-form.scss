@@ -7,12 +7,10 @@
 
       .registration-form {
         width: 1010px;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
         .account-type {
           padding: 10px 123px 97px 121px;
@@ -73,7 +71,6 @@
           .social-icons {
              font-size: 45px;
              font-weight: 100;
-             margin-bottom: 70px;
              margin-top: 60px;
 
             .sign-in__icon {

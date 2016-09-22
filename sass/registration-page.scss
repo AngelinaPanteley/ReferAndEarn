@@ -1,17 +1,15 @@
 .registration-page,
 .sign-in-page {
 
-	.header .header__icon-box {
-		width: 67px;
-	}
+    .header .header__icon-box {
+        width: 67px;
+    }
 
-	.main-block {
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-flex-direction: column;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+    .main-block {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-bottom: 125px;
     padding-top: 0px;
     margin: 0;
@@ -22,21 +20,21 @@
 
     .registration-box,
     .sign-in-box {
-    	margin: 0 auto;
-    	color: #ffffff;
-    	font-family: 'Roboto-Thin',sans-serif;
+        margin: 0 auto;
+        color: #ffffff;
+        font-family: 'Roboto-Thin',sans-serif;
 
 
       .confirm-form {
         width: 1010px;
 
-       	.confim-box {
-        	background-color:#3f3e44;
-        	border-top: 6px solid $green;
+        .confim-box {
+            background-color:#3f3e44;
+            border-top: 6px solid $green;
         }
 
         .button-container {
-        	padding: 84px 0;
+            padding: 84px 0;
         }
       }
 
@@ -44,23 +42,39 @@
 
     .step-1 {
       .confirm-form{
-      	display: none;
+        display: none;
       }
 
-    	.step-box-1 {
-    		background-color:#3f3e44;
-    	}
+        .step-box-1 {
+            background-color:#3f3e44;
+        }
 
     }
 
     .step-2 {
-    	.registration-form {
-    		display: none;
-    	}
+        .registration-form {
+            display: none;
+        }
 
-    	.step-box-2 {
-    		background-color:#3f3e44;
-    	}
+        .step-box-2 {
+            background-color:#3f3e44;
+        }
     }
-	}
+    }
+}
+
+.registration-page {
+
+  .individual-creation,
+  .company-creation {
+    display: none;
+  }
+
+  .individual-state .individual-creation {
+    display: block;
+  }
+
+  .company-state .company-creation {
+    display: block;
+  }
 }
